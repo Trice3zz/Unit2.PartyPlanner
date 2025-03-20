@@ -1,5 +1,5 @@
 
-const COHORT = "2501-FTB-ET-WEB-PT";
+const COHORT = "https://fullstack.instructure.com/courses/1161/users";
 const API_URL = `https://fsa-crud-2aa9294fe819.herokuapp.com/api/${COHORT}/events`;
 const API_URL_RSVP = `https://fsa-crud-2aa9294fe819.herokuapp.com/api/${COHORT}/rsvps`;
 const API_URL_GUESTS = `https://fsa-crud-2aa9294fe819.herokuapp.com/api/${COHORT}/guests`;
@@ -11,14 +11,14 @@ const state = {
 const partyList = document.querySelector('#party');
 
 const addPartyForm = document.querySelector('#addParty');
-console.log(addPartyForm, 'donkey')
+console.log(addPartyForm, 'Trice')
 addPartyForm.addEventListener('submit', addParty);
 
 const addGuestSubmit = document.getElementById('guestSubmit');
 console.log(addGuestSubmit, 'fooo')
 addGuestSubmit.addEventListener('click', addGuestInfo);
 
-//sync state with the API and rerender
+
 
 async function render() {
   await getParties();
@@ -26,7 +26,7 @@ async function render() {
 }
 render();
 
-//update state with parties from API
+
 
 async function getParties() {
   try {
