@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<link href="Stylesheet" style src="style.css" />
+<html lang="en">
+       
 
+
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Darius' Party Planning Service</title>
+   <script defer src="index.js"></script>
+
+  
+</head>
+
+<body>
+  <h1>Book Your Party Here!</h1>
+  <form id="addParty">
+    <label>
+      Name
+      <input type="text" name="name" />
+    </label>
+    <label>
+      Date
+      <input type="text" name="date" />
+    </label>
+    <label>
+      Location
+      <input type="text" name="location" />
+    </label>
+    <label>
+    Description
+    <input type="text" name="description" />
+    </label>
+    <button>Add Party</button>
+  </form>
+
+  <ul id="party"></ul>
+
+  <form id="guestForm" style="display: none;">
+    <h2>Guest Information</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="guestName" name="name">
+    <label for="email">Email:</label>
+    <input type="email" id="guestEmail" name="email">
+    <label for="phone">Phone:</label>
+    <input type="text" id="guestPhone" name="phone">
+
+    <input type="hidden" id="partyId" name="partyId">
+    <button type="submit" id="guestSubmit">Submit</button>
+  </form>
+  
+  <ul id="guests"></ul>
+
+</body>
+</html>
